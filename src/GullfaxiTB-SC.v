@@ -1,15 +1,6 @@
 // Gullfaxi TB - sanity check
 
 program Gullfaxi_tb
-    #(
-        parameter nrPkts = 10;
-        parameter invProbWaitCycle = 1;
-        parameter minWaitForSend = 2;
-        parameter maxWaitForSend = 3;
-        parameter minWaitForGrant = 2;
-        parameter maxWaitForGrant = 3;
-        parameter maxCycles = 25;
-    )
     (
         input  bit            clk,
         output bit            reset,
@@ -26,6 +17,14 @@ program Gullfaxi_tb
         input  bit [2:0]      O_req,
         output bit [2:0]      O_grant
     );
+    
+    parameter nrPkts = 10;
+    parameter invProbWaitCycle = 1;
+    parameter minWaitForSend = 2;
+    parameter maxWaitForSend = 3;
+    parameter minWaitForGrant = 2;
+    parameter maxWaitForGrant = 3;
+    parameter maxCycles = 25;
 
     class Packet;
         rand bit [1:0] port;
@@ -57,10 +56,11 @@ program Gullfaxi_tb
         input            O_req;
         output           O_grant;
     endclocking
-    
+      
     initial begin : generate_queues
-        for(int i = 0; i < nrPkts; i++) begin
-            Packtet p = new();
+        for (int i = 0; i < nrPkts; i++) begin
+            Packet p;
+            p  = new;
             p.randomize();
             packets_to_send.push_back(p);
             expected_packets.push_back(p);
