@@ -40,9 +40,6 @@ program Gullfaxi_tb
         }
     endclass
     
-    Packet packets_to_send[$];
-    Packet expected_packets[$];
-
     default clocking ck @(posedge clk);
         default input #100ps output #100ps; // reading and writing skew
         output           reset;
@@ -59,13 +56,9 @@ program Gullfaxi_tb
     endclocking
     
     initial begin : generate_queues
-        for(int i = 0; i < nrPkts; i++) begin
-            Packtet p = new();
-            p.randomize();
-            packets_to_send.push_back(p);
-            expected_packets.push_back(p);
-        end
-    end
+        Packet packets_to_send[$];
+        Packet expected_packets[$];
+
 
     initial begin : GIP_driver
         ##(10);
