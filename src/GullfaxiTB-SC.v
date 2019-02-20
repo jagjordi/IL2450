@@ -21,10 +21,10 @@ program Gullfaxi_tb
     parameter nrPkts = 10;
     parameter invProbWaitCycle = 1;
     parameter minWaitForSend = 2;
-    parameter maxWaitForSend = 3;
+    parameter maxWaitForSend = 10;
     parameter minWaitForGrant = 2;
-    parameter maxWaitForGrant = 3;
-    parameter maxCycles = 25;
+    parameter maxWaitForGrant = 10;
+    parameter maxCycles = 2000;
 
     class Packet;
         rand bit [1:0] port;
@@ -68,40 +68,44 @@ program Gullfaxi_tb
     end
 
     initial begin : GIP_driver
-        ##(10);
-        ck.reset      <= 1;
-        ##(20);
-        $display("Time:", $time, " Starting to send packet - length = 10 out port = 1");
-        ck.I_valid    <= 1;
-        ck.I_data     <= 8'b001010_01; //length 10, output port 1
-        ##1;
-        for(int i=0;i<9;i++) begin
-            ck.I_data  <= i;
+        Packet cp;
+        ##10;
+        ck.reset <= 1;
+        ##20;
+        while (!packets_to_send.size()) begin
+            $display("Time:", $time, " Starting to send packet");
+            cp = packets_to_send.pop_front();
+            
+            // wait for GIP to be able to accept packets
+            while(!ck.I_ready) #1;
+            
+            // begin transaction
+            ck.I_valid <= 1;
+            ck.I_data[7:2] <= cp.length;
+            ck.I_data[1:0] <= cp.port;
             ##1;
-        end
-        ck.I_data     <= 9;
-        ck.I_end      <= 1;
-        ##1;
-        $display("Time:", $time, " Ending to send packet");
-        ck.I_valid    <= 0;
-        ck.I_data     <= 0;
-        ck.I_end      <= 0;
-        ##2;
-        $display("Time:", $time, " Starting to send packet - length = 6, out port = 0");
-        ck.I_valid    <= 1;
-        ck.I_data     <= 8'b000110_00; //length 6, output port 0
-        ##1;
-        for(int i=0;i<5;i++) begin
-            ck.I_data  <= i;
+
+            for(int i=0;i<9;i++) begin
+                ck.I_valid <= 1;
+                ck.I_data <= i;
+                ##1;
+                if ($urandom_range(100) < 1/invProbWaitCycle) begin
+                    ck.I_valid <= 0;
+                    ##1;
+                end
+            end
+            ck.I_data <= 9;
+            ck.I_end <= 1;
             ##1;
+
+            $display("Time:", $time, " Ending to send packet");
+            ck.I_valid <= 0;
+            ck.I_data <= 0;
+            ck.I_end <= 0;
+
+            // wait for a random number of cycles
+            ##($urandom_range(maxWaitForSend, minWaitForSend));
         end
-        ck.I_data     <= 5;
-        ck.I_end      <= 1;
-        ##1;
-        $display("Time:", $time, " Ending to send packet");
-        ck.I_valid   <= 0;
-        ck.I_data    <= 0;
-        ck.I_end     <= 0;
         ##100;
         $finish();
     end
