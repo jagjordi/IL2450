@@ -12,142 +12,50 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+pwd
+# /afs/kth.se/home/j/o/jordiag/IL2450/src
+cd ..
 # Loading project IL2450
-vsim -voptargs=+acc work.Gullfaxi_tb_top
-# vsim -voptargs="+acc" work.Gullfaxi_tb_top 
-# Start time: 11:07:57 on Feb 21,2019
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading sv_std.std
-# Loading work.Gullfaxi_tb_top(fast)
-# Loading work.Gullfaxi(fast)
-# Loading work.Gullfaxi_tb(fast)
-add wave -position insertpoint sim:/Gullfaxi_tb_top/*
-run
-# Time: 0: Generating packets
-# Time: 60: GIP: Starting to send packets
-# Time: 60: GIP: Begining the transaction to port 0
-# Time: 86: GIP: Ending to send packets
-# 
-# Time: 92: GIP: Starting to send packets
-# Time: 92: GIP: Begining the transaction to port 2
-# Time: 118: GIP: Ending to send packets
-# 
-# Time: 126: GIP: Starting to send packets
-# Time: 126: GIP: Begining the transaction to port 0
-# Time: 126: GOP: Out port: 0; request went up, length 4
-# Time: 146: GOP: Out port: 0; sending grant
-# Time: 148: GIP: Ending to send packets
-# 
-# Time: 152: GOP: Out port: 0; sending started
-# Time: 158: GOP: Out port : 0; sending finished
-#     Gathered           4 elements
-#     Payload is: 
-#           0
-#           1
-#           2
-#           3
-# Time: 162: GOP: Out port: 0; request went up, length 1
-# Time: 166: GIP: Starting to send packets
-# Time: 166: GIP: Begining the transaction to port 1
-# Time: 168: GOP: Out port: 0; sending grant
-# Time: 174: GOP: Out port: 0; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 141
-# Time: 174: GOP: Out port : 0; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           5
-# Time: 188: GIP: Ending to send packets
-# 
-# Time: 196: GIP: Starting to send packets
-# Time: 196: GIP: Begining the transaction to port 0
-# Time: 196: GOP: Out port: 2; request went up, length 1
-# Time: 204: GOP: Out port: 2; sending grant
-# Time: 210: GOP: Out port: 2; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 141
-# Time: 210: GOP: Out port : 2; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           7
-# Time: 224: GIP: Ending to send packets
-# 
-# Time: 232: GIP: Starting to send packets
-# Time: 232: GIP: Begining the transaction to port 1
-# Time: 232: GOP: Out port: 0; request went up, length 2
-# Time: 240: GOP: Out port: 0; sending grant
-# Time: 246: GOP: Out port: 0; sending started
-# ** Error: Expected port doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 141
-# Time: 248: GOP: Out port : 0; sending finished
-#     Gathered           2 elements
-#     Payload is: 
-#          22
-#           0
-# Time: 256: GIP: Ending to send packets
-# 
-# Time: 260: GIP: Starting to send packets
-# Time: 264: GOP: Out port: 1; request went up, length 0
-# Time: 268: GOP: Out port: 1; sending grant
-# Time: 274: GOP: Out port: 1; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv Line: 141
-# Time: 274: GIP: Begining the transaction to port 2
-# Time: 298: GIP: Ending to send packets
-# 
-# Time: 316: GIP: Starting to send packets
-# Time: 316: GIP: Begining the transaction to port 1
-# Time: 338: GIP: Ending to send packets
-# 
-# Time: 344: GIP: Starting to send packets
-# Time: 344: GIP: Begining the transaction to port 2
-# Time: 370: GIP: Ending to send packets
-# 
-# Time: 376: GIP: Starting to send packets
-# Time: 376: GIP: Begining the transaction to port 0
-# Time: 402: GIP: Ending to send packets
-# 
-quit -sim
-# End time: 11:10:38 on Feb 21,2019, Elapsed time: 0:02:41
-# Errors: 7, Warnings: 0
+# Compile of GullfaxiREL1.sv was successful.
+# Compile of GullfaxiREL2.sv was successful.
+# Compile of GullfaxiREL3.sv was successful.
+# Compile of GullfaxiREL4.sv was successful.
 # Compile of GullfaxiTB-SC.sv was successful with warnings.
+# Compile of GullfaxiTOP.sv was successful.
+# 6 compiles, 0 failed with no errors.
 vsim -voptargs=+acc work.Gullfaxi_tb_top
 # vsim -voptargs="+acc" work.Gullfaxi_tb_top 
-# Start time: 11:10:44 on Feb 21,2019
+# Start time: 15:51:25 on Feb 21,2019
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv(67): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vopt-143) Recognized 1 FSM in module "Gullfaxi(fast)".
 # Loading sv_std.std
 # Loading work.Gullfaxi_tb_top(fast)
 # Loading work.Gullfaxi(fast)
 # Loading work.Gullfaxi_tb(fast)
-add wave -position insertpoint sim:/Gullfaxi_tb_top/*
-echo "" > sim.tcl
-#  > sim.tcl
-pwd
-# /afs/kth.se/home/j/o/jordiag/IL2450
-echo "a" > sim.tcl
-# a > sim.tcl
 quit -sim
-# End time: 11:12:40 on Feb 21,2019, Elapsed time: 0:01:56
+# End time: 15:51:31 on Feb 21,2019, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 1
 source src/sim.tcl
 # QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:12:50 on Feb 21,2019
-# vlog -reportprogress 300 *.sv 
-# ** Error: (vlog-7) Failed to open design unit file "*.sv" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 11:12:50 on Feb 21,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# Start time: 15:52:37 on Feb 21,2019
+# vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Error: src/GullfaxiTB-SC.sv(93): (vlog-2730) Undefined variable: 'length'.
+# -- Compiling module Gullfaxi_tb_top
+# End time: 15:52:37 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
 # /afs/kth.se/pkg/vol/contrib/ict/nveg/.pkg.@sys/vol3/mentor/questa_core_10.5c_4/questasim/linux/vlog failed.
 source src/sim.tcl
 # QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:13:04 on Feb 21,2019
+# Start time: 15:52:45 on Feb 21,2019
 # vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
 # -- Compiling module Gullfaxi
 # ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
@@ -162,114 +70,102 @@ source src/sim.tcl
 # 
 # Top level modules:
 # 	Gullfaxi_tb_top
-# End time: 11:13:04 on Feb 21,2019, Elapsed time: 0:00:00
+# End time: 15:52:45 on Feb 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 # vsim -voptargs="+acc" work.Gullfaxi_tb_top 
-# Start time: 11:13:04 on Feb 21,2019
+# Start time: 15:52:45 on Feb 21,2019
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: src/GullfaxiTB-SC.sv(67): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vopt-143) Recognized 1 FSM in module "Gullfaxi(fast)".
 # Loading sv_std.std
 # Loading work.Gullfaxi_tb_top(fast)
 # Loading work.Gullfaxi(fast)
 # Loading work.Gullfaxi_tb(fast)
-run
 # Time: 0: Generating packets
 # 
 # Time: 60: GIP: Starting to send packets
 # Time: 60: GIP: Begining the transaction to port 0, length 4
-# Time: 86: GIP: Ending to send packets
+# Time: 72: GIP: Ending to send packets
 # 
-# Time: 92: GIP: Starting to send packets
-# Time: 92: GIP: Begining the transaction to port 2, length 5
-# Time: 118: GIP: Ending to send packets
+# Time: 80: GOP: Out port: 0; request went up, length 4
+# Time: 82: GIP: Starting to send packets
+# Time: 82: GIP: Begining the transaction to port 0, length 9
+# Time: 100: GOP: Out port: 0; sending grant
+# Time: 106: GOP: Out port: 0; sending started
+# Time: 108: GIP: Ending to send packets
 # 
-# Time: 126: GIP: Starting to send packets
-# Time: 126: GIP: Begining the transaction to port 0, length 9
-# Time: 126: GOP: Out port: 0; request went up, length 4
-# Time: 146: GOP: Out port: 0; sending grant
-# Time: 148: GIP: Ending to send packets
-# 
-# Time: 152: GOP: Out port: 0; sending started
-# Time: 158: GOP: Out port : 0; sending finished
+# Time: 112: GOP: Out port : 0; sending finished
 #     Gathered           4 elements
 #     Payload is: 
 #           0
 #           1
 #           2
 #           3
-# Time: 162: GOP: Out port: 0; request went up, length 1
-# Time: 166: GIP: Starting to send packets
-# Time: 166: GIP: Begining the transaction to port 1, length 2
-# Time: 168: GOP: Out port: 0; sending grant
-# Time: 174: GOP: Out port: 0; sending started
+# Time: 116: GOP: Out port: 1; request went up, length 2
+# Time: 118: GIP: Starting to send packets
+# Time: 118: GIP: Begining the transaction to port 0, length 5
+# Time: 120: GOP: Out port: 1; sending grant
+# Time: 126: GOP: Out port: 1; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 140
+#    Time: 126 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
 # ** Error: Expected port doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 174: GOP: Out port : 0; sending finished
-#     Gathered           1 elements
+#    Time: 126 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
+# Time: 128: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
 #     Payload is: 
-#           5
+#          36
+#           0
+# Time: 134: GIP: Ending to send packets
+# 
+# Time: 142: GOP: Out port: 1; request went up, length 0
+# Time: 146: GOP: Out port: 1; sending grant
+# Time: 150: GIP: Starting to send packets
+# Time: 150: GIP: Begining the transaction to port 2, length 4
+# Time: 152: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 152 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
+# ** Error: Expected port doesn't match
+#    Time: 152 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
+# Time: 162: GIP: Ending to send packets
+# 
+# Time: 176: GIP: Starting to send packets
+# Time: 176: GIP: Begining the transaction to port 2, length 4
 # Time: 188: GIP: Ending to send packets
 # 
 # Time: 196: GIP: Starting to send packets
-# Time: 196: GIP: Begining the transaction to port 0, length 5
-# Time: 196: GOP: Out port: 2; request went up, length 1
-# Time: 204: GOP: Out port: 2; sending grant
-# Time: 210: GOP: Out port: 2; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 210: GOP: Out port : 2; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           7
-# Time: 224: GIP: Ending to send packets
+# Time: 196: GIP: Begining the transaction to port 1, length 12
+# Time: 226: GIP: Ending to send packets
 # 
-# Time: 232: GIP: Starting to send packets
-# Time: 232: GIP: Begining the transaction to port 1, length 11
-# Time: 232: GOP: Out port: 0; request went up, length 2
-# Time: 240: GOP: Out port: 0; sending grant
-# Time: 246: GOP: Out port: 0; sending started
-# ** Error: Expected port doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 248: GOP: Out port : 0; sending finished
-#     Gathered           2 elements
-#     Payload is: 
-#          22
-#           0
-# Time: 256: GIP: Ending to send packets
+# Time: 240: GIP: Starting to send packets
+# Time: 386: GIP: Begining the transaction to port 2, length 12
+# Time: 420: GIP: Ending to send packets
 # 
-# Time: 260: GIP: Starting to send packets
-# Time: 264: GOP: Out port: 1; request went up, length 0
-# Time: 268: GOP: Out port: 1; sending grant
-# Time: 274: GOP: Out port: 1; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 274: GIP: Begining the transaction to port 2, length 4
-# Time: 298: GIP: Ending to send packets
+# Time: 426: GIP: Starting to send packets
+# Time: 426: GIP: Begining the transaction to port 1, length 4
+# Time: 440: GIP: Ending to send packets
 # 
-# Time: 316: GIP: Starting to send packets
-# Time: 316: GIP: Begining the transaction to port 1, length 7
-# Time: 338: GIP: Ending to send packets
+# Time: 444: GIP: Starting to send packets
+# Time: 444: GIP: Begining the transaction to port 1, length 9
+# Time: 466: GIP: Ending to send packets
 # 
-# Time: 344: GIP: Starting to send packets
-# Time: 344: GIP: Begining the transaction to port 2, length 4
-# Time: 370: GIP: Ending to send packets
-# 
-# Time: 376: GIP: Starting to send packets
-# Time: 376: GIP: Begining the transaction to port 0, length 9
-# Time: 402: GIP: Ending to send packets
+# Time: 470: GIP: Starting to send packets
+# Time: 470: GIP: Begining the transaction to port 2, length 3
+# Time: 480: GIP: Ending to send packets
 # 
 quit -sim
-# End time: 11:13:30 on Feb 21,2019, Elapsed time: 0:00:26
-# Errors: 7, Warnings: 1
+# End time: 16:06:45 on Feb 21,2019, Elapsed time: 0:14:00
+# Errors: 4, Warnings: 1
+# Compile of GullfaxiTB-SC.sv failed with 3 errors.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
+# Compile of GullfaxiTB-SC.sv failed with 3 errors.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
 source src/sim.tcl
 # QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:13:34 on Feb 21,2019
+# Start time: 17:33:57 on Feb 21,2019
 # vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
 # -- Compiling module Gullfaxi
 # ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
@@ -279,15 +175,1189 @@ source src/sim.tcl
 # ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
 # -- Compiling module Gullfaxi
 # -- Compiling program Gullfaxi_tb
-# ** Warning: src/GullfaxiTB-SC.sv(67): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module Gullfaxi_tb_top
 # 
 # Top level modules:
 # 	Gullfaxi_tb_top
-# End time: 11:13:34 on Feb 21,2019, Elapsed time: 0:00:00
+# End time: 17:33:57 on Feb 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 # vsim -voptargs="+acc" work.Gullfaxi_tb_top 
-# Start time: 11:13:34 on Feb 21,2019
+# Start time: 17:33:57 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 207
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 208
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 207
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+
+quit -sim
+# End time: 17:43:10 on Feb 21,2019, Elapsed time: 0:09:13
+# Errors: 3, Warnings: 1
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 17:43:11 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 17:43:11 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 17:43:11 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vopt-143) Recognized 1 FSM in module "Gullfaxi(fast)".
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 207
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 208
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 207
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+quit -sim
+# End time: 17:44:32 on Feb 21,2019, Elapsed time: 0:01:21
+# Errors: 3, Warnings: 1
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 17:44:34 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 17:44:34 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 17:44:34 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 207
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 208
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 207
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
+coverage report -detail -cvg -directive -comments -file fcover_report.txt -noa /Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c
+# ** Warning: (vsim-19042) No matching item found for '/Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c'.
+# No matches
+quit -sim
+# End time: 17:48:00 on Feb 21,2019, Elapsed time: 0:03:26
+# Errors: 3, Warnings: 2
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 17:48:04 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Error (suppressible): (vlog-13276) src/GullfaxiTB-SC.sv(133): Field/method name (pktType_c) not in 'p'.
+# -- Compiling module Gullfaxi_tb_top
+# End time: 17:48:04 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+# /afs/kth.se/pkg/vol/contrib/ict/nveg/.pkg.@sys/vol3/mentor/questa_core_10.5c_4/questasim/linux/vlog failed.
+# Compile of GullfaxiTB-SC.sv failed with 1 errors.
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 17:48:25 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 17:48:25 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 17:48:25 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(132): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# F
+# S
+# N
+# F
+# N
+# F
+# S
+# S
+# N
+# N
+# A
+# F
+# A
+# F
+# N
+# F
+# N
+# S
+# F
+# F
+# F
+# F
+# F
+# N
+# N
+# A
+# N
+# N
+# S
+# F
+# S
+# S
+# N
+# F
+# N
+# F
+# F
+# S
+# S
+# S
+# N
+# N
+# N
+# S
+# S
+# F
+# N
+# F
+# N
+# N
+# A
+# S
+# F
+# A
+# S
+# A
+# A
+# S
+# S
+# S
+# S
+# F
+# S
+# F
+# S
+# F
+# S
+# F
+# F
+# F
+# F
+# F
+# A
+# A
+# N
+# F
+# F
+# F
+# F
+# S
+# F
+# F
+# F
+# S
+# F
+# N
+# N
+# S
+# S
+# F
+# A
+# F
+# S
+# S
+# S
+# F
+# F
+# F
+# F
+# N
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 211
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 212
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 211
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
+coverage report -file en.txt
+quit -sim
+# End time: 18:08:53 on Feb 21,2019, Elapsed time: 0:20:28
+# Errors: 3, Warnings: 1
+# Compile of GullfaxiTB-SC.sv failed with 1 errors.
+# Compile of GullfaxiTB-SC.sv failed with 1 errors.
+# Compile of GullfaxiTB-SC.sv failed with 1 errors.
+# Compile of GullfaxiTB-SC.sv failed with 1 errors.
+# Compile of GullfaxiTB-SC.sv was successful with warnings.
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 18:13:44 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 18:13:44 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 18:13:44 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# F
+# S
+# N
+# F
+# N
+# F
+# S
+# S
+# N
+# N
+# A
+# F
+# A
+# F
+# N
+# F
+# N
+# S
+# F
+# F
+# F
+# F
+# F
+# N
+# N
+# A
+# N
+# N
+# S
+# F
+# S
+# S
+# N
+# F
+# N
+# F
+# F
+# S
+# S
+# S
+# N
+# N
+# N
+# S
+# S
+# F
+# N
+# F
+# N
+# N
+# A
+# S
+# F
+# A
+# S
+# A
+# A
+# S
+# S
+# S
+# S
+# F
+# S
+# F
+# S
+# F
+# S
+# F
+# F
+# F
+# F
+# F
+# A
+# A
+# N
+# F
+# F
+# F
+# F
+# S
+# F
+# F
+# F
+# S
+# F
+# N
+# N
+# S
+# S
+# F
+# A
+# F
+# S
+# S
+# S
+# F
+# F
+# F
+# F
+# N
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 221
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
+coverage report -detail -cvg -directive -comments -file fcover_report.txt -noa /Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c
+# ** Warning: (vsim-19042) No matching item found for '/Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c'.
+# No matches
+coverage report -detail -cvg -directive -config -comments -file fcover_report.txt -noa /Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c
+# ** Warning: (vsim-19042) No matching item found for '/Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c'.
+# No matches
+quit -sim
+# End time: 18:15:47 on Feb 21,2019, Elapsed time: 0:02:03
+# Errors: 3, Warnings: 3
+coverage report -detail -cvg -directive -config -comments -file fcover_report.txt -noa /Gullfaxi_tb_top/Gullfaxi_tb_Inst/Cov1/pktType_c
+# Coverage command may be used in loaded simulation and in viewcov mode only.
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 18:15:52 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 18:15:52 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 18:15:52 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# F
+# S
+# N
+# F
+# N
+# F
+# S
+# S
+# N
+# N
+# A
+# F
+# A
+# F
+# N
+# F
+# N
+# S
+# F
+# F
+# F
+# F
+# F
+# N
+# N
+# A
+# N
+# N
+# S
+# F
+# S
+# S
+# N
+# F
+# N
+# F
+# F
+# S
+# S
+# S
+# N
+# N
+# N
+# S
+# S
+# F
+# N
+# F
+# N
+# N
+# A
+# S
+# F
+# A
+# S
+# A
+# A
+# S
+# S
+# S
+# S
+# F
+# S
+# F
+# S
+# F
+# S
+# F
+# F
+# F
+# F
+# F
+# A
+# A
+# N
+# F
+# F
+# F
+# F
+# S
+# F
+# F
+# F
+# S
+# F
+# N
+# N
+# S
+# S
+# F
+# A
+# F
+# S
+# S
+# S
+# F
+# F
+# F
+# F
+# N
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 221
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
+quit -sim
+# End time: 18:17:00 on Feb 21,2019, Elapsed time: 0:01:08
+# Errors: 3, Warnings: 1
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 18:17:02 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 18:17:02 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 18:17:02 on Feb 21,2019
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.Gullfaxi_tb_top(fast)
@@ -295,102 +1365,237 @@ source src/sim.tcl
 # Loading work.Gullfaxi_tb(fast)
 # Time: 0: Generating packets
 # 
+# F
+# S
+# N
+# F
+# N
+# F
+# S
+# S
+# N
+# N
+# A
+# F
+# A
+# F
+# N
+# F
+# N
+# S
+# F
+# F
+# F
+# F
+# F
+# N
+# N
+# A
+# N
+# N
+# S
+# F
+# S
+# S
+# N
+# F
+# N
+# F
+# F
+# S
+# S
+# S
+# N
+# N
+# N
+# S
+# S
+# F
+# N
+# F
+# N
+# N
+# A
+# S
+# F
+# A
+# S
+# A
+# A
+# S
+# S
+# S
+# S
+# F
+# S
+# F
+# S
+# F
+# S
+# F
+# F
+# F
+# F
+# F
+# A
+# A
+# N
+# F
+# F
+# F
+# F
+# S
+# F
+# F
+# F
+# S
+# F
+# N
+# N
+# S
+# S
+# F
+# A
+# F
+# S
+# S
+# S
+# F
+# F
+# F
+# F
+# N
 # Time: 60: GIP: Starting to send packets
-# Time: 60: GIP: Begining the transaction to port 0, length 4
-# Time: 86: GIP: Ending to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
 # 
-# Time: 92: GIP: Starting to send packets
-# Time: 92: GIP: Begining the transaction to port 2, length 5
-# Time: 118: GIP: Ending to send packets
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
 # 
-# Time: 126: GIP: Starting to send packets
-# Time: 126: GIP: Begining the transaction to port 0, length 9
-# Time: 126: GOP: Out port: 0; request went up, length 4
-# Time: 146: GOP: Out port: 0; sending grant
-# Time: 148: GIP: Ending to send packets
-# 
-# Time: 152: GOP: Out port: 0; sending started
-# Time: 158: GOP: Out port : 0; sending finished
-#     Gathered           4 elements
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
 #     Payload is: 
 #           0
-#           1
-#           2
-#           3
-# Time: 162: GOP: Out port: 0; request went up, length 1
-# Time: 166: GIP: Starting to send packets
-# Time: 166: GIP: Begining the transaction to port 1, length 2
-# Time: 168: GOP: Out port: 0; sending grant
-# Time: 174: GOP: Out port: 0; sending started
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 140
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
 # ** Error: Expected port doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 174: GOP: Out port : 0; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           5
-# Time: 188: GIP: Ending to send packets
-# 
-# Time: 196: GIP: Starting to send packets
-# Time: 196: GIP: Begining the transaction to port 0, length 5
-# Time: 196: GOP: Out port: 2; request went up, length 1
-# Time: 204: GOP: Out port: 2; sending grant
-# Time: 210: GOP: Out port: 2; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 210: GOP: Out port : 2; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           7
-# Time: 224: GIP: Ending to send packets
-# 
-# Time: 232: GIP: Starting to send packets
-# Time: 232: GIP: Begining the transaction to port 1, length 11
-# Time: 232: GOP: Out port: 0; request went up, length 2
-# Time: 240: GOP: Out port: 0; sending grant
-# Time: 246: GOP: Out port: 0; sending started
-# ** Error: Expected port doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 248: GOP: Out port : 0; sending finished
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 221
+# Time: 148: GOP: Out port : 1; sending finished
 #     Gathered           2 elements
 #     Payload is: 
-#          22
+#          38
 #           0
-# Time: 256: GIP: Ending to send packets
+# Time: 160: GIP: Ending to send packets
 # 
-# Time: 260: GIP: Starting to send packets
-# Time: 264: GOP: Out port: 1; request went up, length 0
-# Time: 268: GOP: Out port: 1; sending grant
-# Time: 274: GOP: Out port: 1; sending started
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 140
-# ** Error: Expected port doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 274: GIP: Begining the transaction to port 2, length 4
-# Time: 298: GIP: Ending to send packets
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
 # 
-# Time: 316: GIP: Starting to send packets
-# Time: 316: GIP: Begining the transaction to port 1, length 7
-# Time: 338: GIP: Ending to send packets
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
 # 
-# Time: 344: GIP: Starting to send packets
-# Time: 344: GIP: Begining the transaction to port 2, length 4
-# Time: 370: GIP: Ending to send packets
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
 # 
-# Time: 376: GIP: Starting to send packets
-# Time: 376: GIP: Begining the transaction to port 0, length 9
-# Time: 402: GIP: Ending to send packets
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
 # 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
 quit -sim
-# End time: 11:19:33 on Feb 21,2019, Elapsed time: 0:05:59
-# Errors: 7, Warnings: 0
+# End time: 18:19:49 on Feb 21,2019, Elapsed time: 0:02:47
+# Errors: 3, Warnings: 0
 source src/sim.tcl
 # QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:19:36 on Feb 21,2019
-# vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# Start time: 18:19:51 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
 # -- Compiling module Gullfaxi
 # ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
 # -- Compiling module Gullfaxi
@@ -399,17 +1604,34 @@ source src/sim.tcl
 # ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
 # -- Compiling module Gullfaxi
 # -- Compiling program Gullfaxi_tb
-# ** Warning: src/GullfaxiTB-SC.sv(67): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Error: src/GullfaxiTB-SC.sv(144): (vlog-2730) Undefined variable: 'port'.
+# -- Compiling module Gullfaxi_tb_top
+# End time: 18:19:51 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# /afs/kth.se/pkg/vol/contrib/ict/nveg/.pkg.@sys/vol3/mentor/questa_core_10.5c_4/questasim/linux/vlog failed.
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 18:20:20 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module Gullfaxi_tb_top
 # 
 # Top level modules:
 # 	Gullfaxi_tb_top
-# End time: 11:19:36 on Feb 21,2019, Elapsed time: 0:00:00
+# End time: 18:20:20 on Feb 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
-# vsim -voptargs="+acc" work.Gullfaxi_tb_top 
-# Start time: 11:19:36 on Feb 21,2019
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 18:20:20 on Feb 21,2019
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: src/GullfaxiTB-SC.sv(67): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # Loading sv_std.std
 # Loading work.Gullfaxi_tb_top(fast)
 # Loading work.Gullfaxi(fast)
@@ -417,101 +1639,136 @@ source src/sim.tcl
 # Time: 0: Generating packets
 # 
 # Time: 60: GIP: Starting to send packets
-# Time: 60: GIP: Begining the transaction to port 0, length 4
-# Time: 86: GIP: Ending to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
 # 
-# Time: 92: GIP: Starting to send packets
-# Time: 92: GIP: Begining the transaction to port 0, length 9
-# Time: 118: GIP: Ending to send packets
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
 # 
-# Time: 126: GIP: Starting to send packets
-# Time: 126: GIP: Begining the transaction to port 0, length 5
-# Time: 126: GOP: Out port: 0; request went up, length 4
-# Time: 146: GOP: Out port: 0; sending grant
-# Time: 148: GIP: Ending to send packets
-# 
-# Time: 152: GOP: Out port: 0; sending started
-# Time: 158: GOP: Out port : 0; sending finished
-#     Gathered           4 elements
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
 #     Payload is: 
 #           0
-#           1
-#           2
-#           3
-# Time: 162: GOP: Out port: 0; request went up, length 1
-# Time: 166: GIP: Starting to send packets
-# Time: 166: GIP: Begining the transaction to port 2, length 4
-# Time: 168: GOP: Out port: 0; sending grant
-# Time: 174: GOP: Out port: 0; sending started
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 174: GOP: Out port : 0; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           5
-# Time: 188: GIP: Ending to send packets
-# 
-# Time: 196: GIP: Starting to send packets
-# Time: 196: GIP: Begining the transaction to port 2, length 4
-# Time: 196: GOP: Out port: 2; request went up, length 1
-# Time: 204: GOP: Out port: 2; sending grant
-# Time: 210: GOP: Out port: 2; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 219
 # ** Error: Expected port doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
-# Time: 210: GOP: Out port : 2; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           7
-# Time: 224: GIP: Ending to send packets
-# 
-# Time: 232: GIP: Starting to send packets
-# Time: 232: GIP: Begining the transaction to port 1, length 12
-# Time: 232: GOP: Out port: 0; request went up, length 2
-# Time: 240: GOP: Out port: 0; sending grant
-# Time: 246: GOP: Out port: 0; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# ** Error: Expected port doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
-# Time: 248: GOP: Out port : 0; sending finished
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# Time: 148: GOP: Out port : 1; sending finished
 #     Gathered           2 elements
 #     Payload is: 
-#          36
+#          38
 #           0
-# Time: 256: GIP: Ending to send packets
+# Time: 160: GIP: Ending to send packets
 # 
-# Time: 260: GIP: Starting to send packets
-# Time: 264: GOP: Out port: 1; request went up, length 0
-# Time: 268: GOP: Out port: 1; sending grant
-# Time: 274: GOP: Out port: 1; sending started
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# ** Error: Expected port doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
-# Time: 274: GIP: Begining the transaction to port 2, length 12
-# Time: 298: GIP: Ending to send packets
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 219
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
 # 
-# Time: 316: GIP: Starting to send packets
-# Time: 316: GIP: Begining the transaction to port 1, length 4
-# Time: 338: GIP: Ending to send packets
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
 # 
-# Time: 344: GIP: Starting to send packets
-# Time: 344: GIP: Begining the transaction to port 1, length 9
-# Time: 370: GIP: Ending to send packets
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
 # 
-# Time: 376: GIP: Starting to send packets
-# Time: 376: GIP: Begining the transaction to port 2, length 3
-# Time: 402: GIP: Ending to send packets
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
 # 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
 quit -sim
-# End time: 11:22:33 on Feb 21,2019, Elapsed time: 0:02:57
-# Errors: 7, Warnings: 1
+# End time: 18:21:30 on Feb 21,2019, Elapsed time: 0:01:10
+# Errors: 3, Warnings: 1
 source src/sim.tcl
 # QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:22:34 on Feb 21,2019
-# vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# Start time: 18:21:32 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
 # -- Compiling module Gullfaxi
 # ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
 # -- Compiling module Gullfaxi
@@ -520,128 +1777,17 @@ source src/sim.tcl
 # ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
 # -- Compiling module Gullfaxi
 # -- Compiling program Gullfaxi_tb
-# ** Error: (vlog-13069) src/GullfaxiTB-SC.sv(165): near "endprogram": syntax error, unexpected "SystemVerilog keyword 'endprogram'", expecting ';'.
-# ** Error: src/GullfaxiTOP.sv(48): Illegal declaration after the statement near line '3'.  Declarations must precede statements.  Look for stray semicolons.
-# ** Error: src/GullfaxiTOP.sv(53): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(54): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(55): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(56): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(57): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: src/GullfaxiTOP.sv(60): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(61): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(62): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(63): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(64): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: src/GullfaxiTOP.sv(67): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(68): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(69): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(70): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(71): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: (vlog-13069) src/GullfaxiTOP.sv(75): near "initial": syntax error, unexpected initial.
-# ** Error: src/GullfaxiTOP.sv(82): Checker 'Gullfaxi' not found.  Instantiation 'Gullfaxi_Inst' must be of a visible checker.
-# ** Error: src/GullfaxiTOP.sv(85): Checker 'Gullfaxi_tb' not found.  Instantiation 'Gullfaxi_tb_Inst' must be of a visible checker.
-# ** Error: (vlog-13069) src/GullfaxiTOP.sv(87): near "endmodule": syntax error, unexpected endmodule, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
-# End time: 11:22:34 on Feb 21,2019, Elapsed time: 0:00:00
-# Errors: 21, Warnings: 3
-# /afs/kth.se/pkg/vol/contrib/ict/nveg/.pkg.@sys/vol3/mentor/questa_core_10.5c_4/questasim/linux/vlog failed.
-source src/sim.tcl
-# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:22:43 on Feb 21,2019
-# vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# -- Compiling program Gullfaxi_tb
-# ** Error: (vlog-13069) src/GullfaxiTB-SC.sv(165): near "end": syntax error, unexpected end, expecting ';'.
-# ** Error: src/GullfaxiTOP.sv(48): Illegal declaration after the statement near line '3'.  Declarations must precede statements.  Look for stray semicolons.
-# ** Error: src/GullfaxiTOP.sv(53): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(54): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(55): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(56): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(57): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: src/GullfaxiTOP.sv(60): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(61): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(62): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(63): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(64): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: src/GullfaxiTOP.sv(67): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(68): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(69): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(70): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(71): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: (vlog-13069) src/GullfaxiTOP.sv(75): near "initial": syntax error, unexpected initial.
-# ** Error: src/GullfaxiTOP.sv(82): Checker 'Gullfaxi' not found.  Instantiation 'Gullfaxi_Inst' must be of a visible checker.
-# ** Error: src/GullfaxiTOP.sv(85): Checker 'Gullfaxi_tb' not found.  Instantiation 'Gullfaxi_tb_Inst' must be of a visible checker.
-# ** Error: (vlog-13069) src/GullfaxiTOP.sv(87): near "endmodule": syntax error, unexpected endmodule, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
-# End time: 11:22:43 on Feb 21,2019, Elapsed time: 0:00:00
-# Errors: 21, Warnings: 3
-# /afs/kth.se/pkg/vol/contrib/ict/nveg/.pkg.@sys/vol3/mentor/questa_core_10.5c_4/questasim/linux/vlog failed.
-source src/sim.tcl
-# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:23:06 on Feb 21,2019
-# vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# -- Compiling program Gullfaxi_tb
-# ** Error: (vlog-13069) src/GullfaxiTB-SC.sv(165): near "end": syntax error, unexpected end, expecting ';'.
-# ** Error: src/GullfaxiTOP.sv(48): Illegal declaration after the statement near line '3'.  Declarations must precede statements.  Look for stray semicolons.
-# ** Error: src/GullfaxiTOP.sv(53): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(54): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(55): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(56): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(57): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: src/GullfaxiTOP.sv(60): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(61): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(62): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(63): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(64): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: src/GullfaxiTOP.sv(67): Bit-select of reg not allowed in procedural continuous assignment: O_start.
-# ** Error: src/GullfaxiTOP.sv(68): Bit-select of reg not allowed in procedural continuous assignment: O_length.
-# ** Error: src/GullfaxiTOP.sv(69): Bit-select of reg not allowed in procedural continuous assignment: O_data.
-# ** Error: src/GullfaxiTOP.sv(70): Bit-select of reg not allowed in procedural continuous assignment: O_end.
-# ** Error: src/GullfaxiTOP.sv(71): Bit-select of reg not allowed in procedural continuous assignment: O_req.
-# ** Error: (vlog-13069) src/GullfaxiTOP.sv(75): near "initial": syntax error, unexpected initial.
-# ** Error: src/GullfaxiTOP.sv(82): Checker 'Gullfaxi' not found.  Instantiation 'Gullfaxi_Inst' must be of a visible checker.
-# ** Error: src/GullfaxiTOP.sv(85): Checker 'Gullfaxi_tb' not found.  Instantiation 'Gullfaxi_tb_Inst' must be of a visible checker.
-# ** Error: (vlog-13069) src/GullfaxiTOP.sv(87): near "endmodule": syntax error, unexpected endmodule, expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
-# End time: 11:23:06 on Feb 21,2019, Elapsed time: 0:00:00
-# Errors: 21, Warnings: 3
-# /afs/kth.se/pkg/vol/contrib/ict/nveg/.pkg.@sys/vol3/mentor/questa_core_10.5c_4/questasim/linux/vlog failed.
-# Compile of GullfaxiTB-SC.sv failed with 1 errors.
-# Error opening /afs/kth.se/home/j/o/jordiag/IL2450/(vlog-13069) /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv
-# Path name '/afs/kth.se/home/j/o/jordiag/IL2450/(vlog-13069) /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTB-SC.sv' doesn't exist.
-source src/sim.tcl
-# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
-# Start time: 11:24:26 on Feb 21,2019
-# vlog -reportprogress 300 src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
-# -- Compiling module Gullfaxi
-# -- Compiling program Gullfaxi_tb
-# ** Warning: src/GullfaxiTB-SC.sv(67): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module Gullfaxi_tb_top
 # 
 # Top level modules:
 # 	Gullfaxi_tb_top
-# End time: 11:24:26 on Feb 21,2019, Elapsed time: 0:00:00
+# End time: 18:21:32 on Feb 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
-# vsim -voptargs="+acc" work.Gullfaxi_tb_top 
-# Start time: 11:24:26 on Feb 21,2019
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 18:21:32 on Feb 21,2019
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: src/GullfaxiTB-SC.sv(67): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # Loading sv_std.std
 # Loading work.Gullfaxi_tb_top(fast)
 # Loading work.Gullfaxi(fast)
@@ -649,97 +1795,286 @@ source src/sim.tcl
 # Time: 0: Generating packets
 # 
 # Time: 60: GIP: Starting to send packets
-# Time: 60: GIP: Begining the transaction to port 0, length 4
-# Time: 86: GIP: Ending to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
 # 
-# Time: 92: GIP: Starting to send packets
-# Time: 92: GIP: Begining the transaction to port 0, length 9
-# Time: 118: GIP: Ending to send packets
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
 # 
-# Time: 126: GIP: Starting to send packets
-# Time: 126: GIP: Begining the transaction to port 0, length 5
-# Time: 126: GOP: Out port: 0; request went up, length 4
-# Time: 146: GOP: Out port: 0; sending grant
-# Time: 148: GIP: Ending to send packets
-# 
-# Time: 152: GOP: Out port: 0; sending started
-# Time: 158: GOP: Out port : 0; sending finished
-#     Gathered           4 elements
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
 #     Payload is: 
 #           0
-#           1
-#           2
-#           3
-# Time: 162: GOP: Out port: 0; request went up, length 1
-# Time: 166: GIP: Starting to send packets
-# Time: 166: GIP: Begining the transaction to port 2, length 4
-# Time: 168: GOP: Out port: 0; sending grant
-# Time: 174: GOP: Out port: 0; sending started
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 174 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# Time: 174: GOP: Out port : 0; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           5
-# Time: 188: GIP: Ending to send packets
-# 
-# Time: 196: GIP: Starting to send packets
-# Time: 196: GIP: Begining the transaction to port 2, length 4
-# Time: 196: GOP: Out port: 2; request went up, length 1
-# Time: 204: GOP: Out port: 2; sending grant
-# Time: 210: GOP: Out port: 2; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 219
 # ** Error: Expected port doesn't match
-#    Time: 210 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[2].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
-# Time: 210: GOP: Out port : 2; sending finished
-#     Gathered           1 elements
-#     Payload is: 
-#           7
-# Time: 224: GIP: Ending to send packets
-# 
-# Time: 232: GIP: Starting to send packets
-# Time: 232: GIP: Begining the transaction to port 1, length 12
-# Time: 232: GOP: Out port: 0; request went up, length 2
-# Time: 240: GOP: Out port: 0; sending grant
-# Time: 246: GOP: Out port: 0; sending started
-# ** Error: Expectet packet length doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# ** Error: Expected port doesn't match
-#    Time: 246 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
-# Time: 248: GOP: Out port : 0; sending finished
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# Time: 148: GOP: Out port : 1; sending finished
 #     Gathered           2 elements
 #     Payload is: 
-#          36
+#          38
 #           0
-# Time: 256: GIP: Ending to send packets
+# Time: 160: GIP: Ending to send packets
 # 
-# Time: 260: GIP: Starting to send packets
-# Time: 264: GOP: Out port: 1; request went up, length 0
-# Time: 268: GOP: Out port: 1; sending grant
-# Time: 274: GOP: Out port: 1; sending started
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
 # ** Error: Expectet packet length doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 141
-# ** Error: Expected port doesn't match
-#    Time: 274 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 142
-# Time: 274: GIP: Begining the transaction to port 2, length 12
-# Time: 298: GIP: Ending to send packets
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 219
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
 # 
-# Time: 316: GIP: Starting to send packets
-# Time: 316: GIP: Begining the transaction to port 1, length 4
-# Time: 338: GIP: Ending to send packets
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
 # 
-# Time: 344: GIP: Starting to send packets
-# Time: 344: GIP: Begining the transaction to port 1, length 9
-# Time: 370: GIP: Ending to send packets
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
 # 
-# Time: 376: GIP: Starting to send packets
-# Time: 376: GIP: Begining the transaction to port 2, length 3
-# Time: 402: GIP: Ending to send packets
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
 # 
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-# Can't move the Now cursor.
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
 quit -sim
-# End time: 11:32:55 on Feb 21,2019, Elapsed time: 0:08:29
-# Errors: 10, Warnings: 1
+# End time: 18:21:51 on Feb 21,2019, Elapsed time: 0:00:19
+# Errors: 3, Warnings: 1
+source src/sim.tcl
+# QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
+# Start time: 18:21:56 on Feb 21,2019
+# vlog -reportprogress 300 -cover bcs src/GullfaxiREL1.sv src/GullfaxiREL2.sv src/GullfaxiREL3.sv src/GullfaxiREL4.sv src/GullfaxiTB-SC.sv src/GullfaxiTOP.sv 
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL2.sv(11): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL3.sv(12): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# ** Warning: src/GullfaxiREL4.sv(13): (vlog-2275) 'Gullfaxi' already exists and will be overwritten.
+# -- Compiling module Gullfaxi
+# -- Compiling program Gullfaxi_tb
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module Gullfaxi_tb_top
+# 
+# Top level modules:
+# 	Gullfaxi_tb_top
+# End time: 18:21:56 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -coverage work.Gullfaxi_tb_top 
+# Start time: 18:21:56 on Feb 21,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: src/GullfaxiTB-SC.sv(141): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading work.Gullfaxi_tb_top(fast)
+# Loading work.Gullfaxi(fast)
+# Loading work.Gullfaxi_tb(fast)
+# Time: 0: Generating packets
+# 
+# Time: 60: GIP: Starting to send packets
+# Time: 60: GIP: Begining the transaction to outPort 2, length 11
+# Time: 90: GIP: Ending to send packets
+# 
+# Time: 98: GOP: Out port: 2; request went up, length 11
+# Time: 104: GIP: Starting to send packets
+# Time: 104: GIP: Begining the transaction to outPort 2, length 9
+# Time: 106: GOP: Out port: 2; sending grant
+# Time: 112: GOP: Out port: 2; sending started
+# Time: 128: GIP: Ending to send packets
+# 
+# Time: 132: GOP: Out port : 2; sending finished
+#     Gathered          11 elements
+#     Payload is: 
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+#           0
+# Time: 136: GOP: Out port: 1; request went up, length 2
+# Time: 138: GIP: Starting to send packets
+# Time: 138: GIP: Begining the transaction to outPort 0, length 9
+# Time: 140: GOP: Out port: 1; sending grant
+# Time: 146: GOP: Out port: 1; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 219
+# ** Error: Expected port doesn't match
+#    Time: 146 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[1].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 220
+# Time: 148: GOP: Out port : 1; sending finished
+#     Gathered           2 elements
+#     Payload is: 
+#          38
+#           0
+# Time: 160: GIP: Ending to send packets
+# 
+# Time: 168: GOP: Out port: 0; request went up, length 0
+# Time: 180: GIP: Starting to send packets
+# Time: 180: GIP: Begining the transaction to outPort 1, length 3
+# Time: 188: GOP: Out port: 0; sending grant
+# Time: 190: GIP: Ending to send packets
+# 
+# Time: 194: GOP: Out port: 0; sending started
+# ** Error: Expectet packet length doesn't match
+#    Time: 194 ns  Scope: Gullfaxi_tb_top.Gullfaxi_tb_Inst.generateLoop[0].GOPcontroller File: src/GullfaxiTB-SC.sv Line: 219
+# Time: 196: GIP: Starting to send packets
+# Time: 196: GIP: Begining the transaction to outPort 1, length 10
+# Time: 224: GIP: Ending to send packets
+# 
+# Time: 242: GIP: Starting to send packets
+# Time: 242: GIP: Begining the transaction to outPort 1, length 9
+# Time: 266: GIP: Ending to send packets
+# 
+# Time: 272: GIP: Starting to send packets
+# Time: 272: GIP: Begining the transaction to outPort 1, length 4
+# Time: 286: GIP: Ending to send packets
+# 
+# Time: 290: GIP: Starting to send packets
+# Time: 290: GIP: Begining the transaction to outPort 1, length 5
+# Time: 304: GIP: Ending to send packets
+# 
+# Time: 312: GIP: Starting to send packets
+# Time: 462: GIP: Begining the transaction to outPort 1, length 5
+# Time: 476: GIP: Ending to send packets
+# 
+# Time: 486: GIP: Starting to send packets
+# Time: 486: GIP: Begining the transaction to outPort 1, length 9
+# Time: 508: GIP: Ending to send packets
+# 
+# Time: 516: GIP: Starting to send packets
+# Time: 516: GIP: Begining the transaction to outPort 1, length 10
+# Time: 546: GIP: Ending to send packets
+# 
+# Time: 550: GIP: Starting to send packets
+# Time: 550: GIP: Begining the transaction to outPort 1, length 3
+# Time: 562: GIP: Ending to send packets
+# 
+# Time: 570: GIP: Starting to send packets
+# Time: 570: GIP: Begining the transaction to outPort 1, length 6
+# Time: 588: GIP: Ending to send packets
+# 
+# Time: 604: GIP: Starting to send packets
+# Time: 604: GIP: Begining the transaction to outPort 1, length 5
+# Time: 620: GIP: Ending to send packets
+# 
+# Time: 630: GIP: Starting to send packets
+# Time: 630: GIP: Begining the transaction to outPort 0, length 9
+# Time: 652: GIP: Ending to send packets
+# 
+# Time: 656: GIP: Starting to send packets
+# Time: 656: GIP: Begining the transaction to outPort 1, length 7
+# Time: 674: GIP: Ending to send packets
+# 
+# Time: 680: GIP: Starting to send packets
+# Time: 680: GIP: Begining the transaction to outPort 0, length 5
+# Time: 694: GIP: Ending to send packets
+# 
+# Time: 710: GIP: Starting to send packets
+# Time: 710: GIP: Begining the transaction to outPort 1, length 7
+# Time: 728: GIP: Ending to send packets
+# 
+# Time: 744: GIP: Starting to send packets
+# Time: 888: GIP: Begining the transaction to outPort 2, length 5
+# Time: 904: GIP: Ending to send packets
+# 
+# Time: 914: GIP: Starting to send packets
+# Time: 914: GIP: Begining the transaction to outPort 1, length 5
+# Time: 928: GIP: Ending to send packets
+# 
+# Time: 948: GIP: Starting to send packets
+# Time: 948: GIP: Begining the transaction to outPort 1, length 3
+# Time: 958: GIP: Ending to send packets
+# 
+# Time: 968: GIP: Starting to send packets
+# Time: 968: GIP: Begining the transaction to outPort 1, length 3
+# Time: 980: GIP: Ending to send packets
+# 
+# Time: 994: GIP: Starting to send packets
+# Time: 994: GIP: Begining the transaction to outPort 1, length 5
+quit -sim
+# End time: 18:40:07 on Feb 21,2019, Elapsed time: 0:18:11
+# Errors: 3, Warnings: 1
+quit -f
