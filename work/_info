@@ -1,0 +1,132 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/afs/kth.se/home/j/o/jordiag/IL2225/LAB4
+T_opt
+Z1 !s110 1550843568
+VGfH0K9W8Y3ObkQbc<ZE:[0
+Z2 04 15 4 work Gullfaxi_tb_top fast 0
+=1-f48e38d6217f-5c6ffeb0-59031-a3b
+o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OE;O;10.5c_4;63
+R0
+T_opt1
+!s110 1550673579
+V7>GHV_Xbb8G?U_0lT?@?<2
+R2
+=1-00238bf41ce5-5c6d66ab-138a0-4627
+o-quiet -auto_acc_if_foreign -work work
+R3
+n@_opt1
+R4
+R0
+vGullfaxi
+Z5 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 jd1=>GE2S]KX2;FRdS;=h0
+I`<eicKOEbU<WYlUc_Vkh13
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+!s105 GullfaxiREL4_sv_unit
+S1
+Z7 d/afs/kth.se/home/j/o/jordiag/IL2450
+w1550585240
+8src/GullfaxiREL4.sv
+Fsrc/GullfaxiREL4.sv
+L0 13
+Z8 OE;L;10.5c_4;63
+r1
+!s85 0
+31
+Z9 !s108 1550843568.000000
+Z10 !s107 src/GullfaxiTOP.sv|src/GullfaxiTB-SC.sv|src/GullfaxiREL4.sv|
+Z11 !s90 -reportprogress|300|-cover|bcs|src/GullfaxiREL4.sv|src/GullfaxiTB-SC.sv|src/GullfaxiTOP.sv|
+!i113 0
+Z12 !s102 -cover bcs
+Z13 o-cover bcs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@gullfaxi
+4Gullfaxi_tb
+R5
+R1
+!i10b 1
+!s100 ShDAeJ>dglmKU`R9UI]hN0
+I5<1gU==Dd:?aoJh>RjYbI0
+R6
+!s105 GullfaxiTB2dSC_sv_unit
+S1
+R7
+w1550843564
+8src/GullfaxiTB-SC.sv
+Fsrc/GullfaxiTB-SC.sv
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R3
+n@gullfaxi_tb
+vGullfaxi_tb_top
+R5
+!s110 1550850168
+!i10b 1
+!s100 >kcXeOc]f@aI>b=C=F=0A1
+IZ66bnYfN0[T98o8EV:o_`1
+R6
+!s105 GullfaxiTOP_sv_unit
+S1
+R7
+w1550850099
+8/afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv
+F/afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1550850168.000000
+!s107 /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv|
+!i113 0
+Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@gullfaxi_tb_top
+YGullfaxiInterface
+R5
+!s110 1550851212
+!i10b 1
+!s100 nE@Sh2k65F>CU@bJ5Noo20
+Im=U=bTN`OEVI]aCPmV?ck1
+R6
+!s105 TestbenchObjects_sv_unit
+S1
+R7
+w1550850558
+8/afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv
+F/afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1550851212.000000
+!s107 /afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv|
+!i113 0
+R14
+R3
+n@gullfaxi@interface

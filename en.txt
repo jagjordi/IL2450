@@ -1,0 +1,34 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: src/GullfaxiREL4.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           95        95         0     100.0
+    Branches                        37        36         1      97.2
+    FEC Condition Terms              8         6         2      75.0
+
+=================================================================================
+=== File: src/GullfaxiTB-SC.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           87        85         2      97.7
+    Branches                        18        18         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+
+=================================================================================
+=== File: src/GullfaxiTOP.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            7         7         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+
+
+TOTAL COVERGROUP COVERAGE: 10.0%  COVERGROUP TYPES: 1
+
+Total Coverage By File (code coverage only, filtered view): 90.7%
+

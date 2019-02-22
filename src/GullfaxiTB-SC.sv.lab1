@@ -20,13 +20,13 @@ program Gullfaxi_tb
         output bit [2:0]      O_grant
     );
     
-    parameter nrPkts = 10;
+    parameter nrPkts = 100;
     parameter invProbWaitCycle = 0.1;
     parameter minWaitForSend = 2;
     parameter maxWaitForSend = 10;
     parameter minWaitForGrant = 2;
     parameter maxWaitForGrant = 10;
-    parameter maxCycles = 2000;
+    parameter maxCycles = nrPkts * 100;
 
     class Packet;
         rand bit [1:0] port;
@@ -90,7 +90,7 @@ program Gullfaxi_tb
             ck.I_data[1:0] <= packet_to_send.port;
             ##1;
 
-            for(int i=0;i<packet_to_send.length;i++) begin
+            for(int i=0;i<packet_to_send.length - 1;i++) begin
                 ck.I_valid <= 1;
                 ck.I_data <= i;
                 ##1;
@@ -99,6 +99,7 @@ program Gullfaxi_tb
                     ##1;
                 end
             end
+            ck.I_valid <= 1;
             ck.I_data <= 9;
             ck.I_end <= 1;
             ##1;
@@ -138,8 +139,8 @@ program Gullfaxi_tb
                     ck.O_grant[port] <= 0;
                     `TIMESTAMP($sformatf("GOP: Out port: %0d; sending started", port));
                     // Check if expected values match
-                    if (ck.O_length[port] != expected_packet.length) $error("Expectet packet length doesn't match");
-                    if (port != expected_packet.port) $error("Expected port doesn't match");
+                    if (ck.O_length[port] != expected_packet.length) $fatal(-1, "Expectet packet length doesn't match");
+                    if (port != expected_packet.port) $fatal(-1, "Expected port doesn't match");
 
                     while (!ck.O_end[port]) begin
                         payloadVec.push_front(ck.O_data[port]);
