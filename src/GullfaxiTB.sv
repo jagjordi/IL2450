@@ -48,9 +48,14 @@ program automatic Gullfaxi_tb (GullfaxiInterface gif);
     
     property length0_prop(int prt);
         @(negedge gif.clk) disable iff (!gif.reset)
-        $fell(gif.O_end[0]) |=> !gif.O_length[prt] until gif.O_req[prt];
+        $fell(gif.O_end[prt]) |=> !gif.O_length[prt] until gif.O_req[prt];
     endproperty
-    
+
+    property endDuringTran_prop(int prt);
+        @(negedge gif.clk) disable iff (!gif.reset)
+        gif.O_start[prt] |=> ((gif.O_length[prt] == 1) && (gif.O_end[prt])) || ((gif.O_length != 1) && (!gif.O_end[prt]));//##(/*gif.O_length[prt] - 1*/1) gif.O_end[prt]));
+    endproperty
+
     GOP0_start1: assert property (start1_prop(0));
     GOP1_start1: assert property (start1_prop(1));
     GOP2_start1: assert property (start1_prop(2));
@@ -78,7 +83,8 @@ program automatic Gullfaxi_tb (GullfaxiInterface gif);
     GOP0_length0 : assert property (length0_prop(0));
     GOP1_length0 : assert property (length0_prop(1));
     GOP2_length0 : assert property (length0_prop(2));
-
+    
+    GOP0_endDuringTran : assert property (endDuringTran_prop(0));
     initial begin
         mailbox #(Packet) generator_checker_mbx;
         mailbox #(Packet) generator_driver_mbx;
