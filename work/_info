@@ -9,15 +9,14 @@ z2
 cModel Technology
 Z0 d/afs/kth.se/home/j/o/jordiag/IL2225/LAB4
 T_opt
-Z1 !s110 1550843568
-VGfH0K9W8Y3ObkQbc<ZE:[0
+Z1 !s110 1551276377
+V5;ncVH>RIM6f8cn9gRNLg2
 Z2 04 15 4 work Gullfaxi_tb_top fast 0
-=1-f48e38d6217f-5c6ffeb0-59031-a3b
+=1-f48e38d622e7-5c769959-3d43f-20cc
 o-quiet -auto_acc_if_foreign -work work +acc
 Z3 tCvgOpt 0
 n@_opt
 Z4 OE;O;10.5c_4;63
-R0
 T_opt1
 !s110 1550673579
 V7>GHV_Xbb8G?U_0lT?@?<2
@@ -33,22 +32,22 @@ Z5 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R1
 !i10b 1
 !s100 jd1=>GE2S]KX2;FRdS;=h0
-I`<eicKOEbU<WYlUc_Vkh13
+I4DGPj=aLD5_QS;82lB1iG2
 Z6 VDg1SIo80bB@j0V0VzS_@n1
-!s105 GullfaxiREL4_sv_unit
+!s105 Gullfaxi_sv_unit
 S1
-Z7 d/afs/kth.se/home/j/o/jordiag/IL2450
+Z7 d/home/j/o/jordiag/IL2450
 w1550585240
-8src/GullfaxiREL4.sv
-Fsrc/GullfaxiREL4.sv
+8src/Gullfaxi.sv
+Fsrc/Gullfaxi.sv
 L0 13
 Z8 OE;L;10.5c_4;63
 r1
 !s85 0
 31
-Z9 !s108 1550843568.000000
-Z10 !s107 src/GullfaxiTOP.sv|src/GullfaxiTB-SC.sv|src/GullfaxiREL4.sv|
-Z11 !s90 -reportprogress|300|-cover|bcs|src/GullfaxiREL4.sv|src/GullfaxiTB-SC.sv|src/GullfaxiTOP.sv|
+Z9 !s108 1551276377.000000
+Z10 !s107 src/GullfaxiTOP.sv|src/GullfaxiTBObjects.sv|src/GullfaxiTB.sv|src/Gullfaxi.sv|
+Z11 !s90 -reportprogress|300|-cover|bcs|src/Gullfaxi.sv|src/GullfaxiTB.sv|src/GullfaxiTBObjects.sv|src/GullfaxiTOP.sv|
 !i113 0
 Z12 !s102 -cover bcs
 Z13 o-cover bcs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
@@ -56,22 +55,22 @@ R3
 n@gullfaxi
 4Gullfaxi_tb
 R5
-R1
-!i10b 1
-!s100 ShDAeJ>dglmKU`R9UI]hN0
-I5<1gU==Dd:?aoJh>RjYbI0
+DXx4 work 18 GullfaxiTB_sv_unit 0 22 7IR5_;1RW=]Qi0RgI[Wgj2
 R6
-!s105 GullfaxiTB2dSC_sv_unit
-S1
-R7
-w1550843564
-8src/GullfaxiTB-SC.sv
-Fsrc/GullfaxiTB-SC.sv
-L0 4
-R8
 r1
 !s85 0
 31
+!i10b 1
+!s100 6_2UPca^bFi>3j8;Q7Q951
+IM?:n:1loIN1I60802mUh51
+!s105 GullfaxiTB_sv_unit
+S1
+R7
+Z14 w1551276373
+Z15 8src/GullfaxiTB.sv
+Z16 Fsrc/GullfaxiTB.sv
+L0 3
+R8
 R9
 R10
 R11
@@ -82,51 +81,133 @@ R3
 n@gullfaxi_tb
 vGullfaxi_tb_top
 R5
-!s110 1550850168
-!i10b 1
-!s100 >kcXeOc]f@aI>b=C=F=0A1
-IZ66bnYfN0[T98o8EV:o_`1
+Z17 DXx4 work 19 GullfaxiTOP_sv_unit 0 22 N9bXVfSMILFLilV1Zj:380
 R6
-!s105 GullfaxiTOP_sv_unit
-S1
-R7
-w1550850099
-8/afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv
-F/afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv
-L0 1
-R8
 r1
 !s85 0
 31
-!s108 1550850168.000000
-!s107 /afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/afs/kth.se/home/j/o/jordiag/IL2450/src/GullfaxiTOP.sv|
+!i10b 1
+!s100 g]nj=R7QMXmF57=7BgYK23
+IL?4P[K>:EMcez4>E0T?X;1
+Z18 !s105 GullfaxiTOP_sv_unit
+S1
+R7
+w1551029339
+Z19 8src/GullfaxiTOP.sv
+Z20 Fsrc/GullfaxiTOP.sv
+L0 2
+R8
+R9
+R10
+R11
 !i113 0
-Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R12
+R13
 R3
 n@gullfaxi_tb_top
 YGullfaxiInterface
 R5
-!s110 1550851212
-!i10b 1
-!s100 nE@Sh2k65F>CU@bJ5Noo20
-Im=U=bTN`OEVI]aCPmV?ck1
+R17
 R6
-!s105 TestbenchObjects_sv_unit
-S1
-R7
-w1550850558
-8/afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv
-F/afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv
-L0 1
-R8
 r1
 !s85 0
 31
-!s108 1550851212.000000
-!s107 /afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/afs/kth.se/home/j/o/jordiag/IL2450/src/TestbenchObjects.sv|
+!i10b 1
+!s100 LT83cMHHQH8gZM^mAAnnA0
+I]I][bc7Rj0LaRN7>PGE2^2
+R18
+S1
+R7
+Z21 w1551267089
+Z22 8src/GullfaxiTBObjects.sv
+Z23 Fsrc/GullfaxiTBObjects.sv
+L0 3
+R8
+R9
+R10
+R11
 !i113 0
-R14
+R12
+R13
 R3
 n@gullfaxi@interface
+XGullfaxiTB_sv_unit
+Z24 !s115 GullfaxiInterface
+R5
+V7IR5_;1RW=]Qi0RgI[Wgj2
+r1
+!s85 0
+31
+!i10b 1
+!s100 k[G0Gz?CR^`OJS;Lf5L1D2
+I7IR5_;1RW=]Qi0RgI[Wgj2
+!i103 1
+S1
+R7
+R14
+R15
+R16
+R23
+L0 1
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R3
+n@gullfaxi@t@b_sv_unit
+XGullfaxiTBObjects_sv_unit
+R24
+R5
+VG:z0iAn;454NaBAlJcY3Z2
+r1
+!s85 0
+31
+!i10b 1
+!s100 IXP@W3Vg:]99^GFloV]Ri0
+IG:z0iAn;454NaBAlJcY3Z2
+!i103 1
+S1
+R7
+R21
+R22
+R23
+L0 1
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R3
+n@gullfaxi@t@b@objects_sv_unit
+XGullfaxiTOP_sv_unit
+R24
+R5
+VN9bXVfSMILFLilV1Zj:380
+r1
+!s85 0
+31
+!i10b 1
+!s100 hD]?z8?Y]S34FKK?`bUO91
+IN9bXVfSMILFLilV1Zj:380
+!i103 1
+S1
+R7
+R21
+R19
+R20
+R23
+L0 1
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R3
+n@gullfaxi@t@o@p_sv_unit
