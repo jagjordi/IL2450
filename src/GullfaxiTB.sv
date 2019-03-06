@@ -42,19 +42,56 @@ program automatic Gullfaxi_tb (GullfaxiInterface gif);
         gif.O_start[prt] |=> gif.O_req[prt] until !gif.O_end[prt];
     endproperty
 
-//    property lengthToggle(int prt);
-//        @(negedge gif.clk)
-//        $changed(gif.O_length[prt]) |=> 
-    
+    property lengthToggle(int prt);
+        @(negedge gif.clk) disable iff (!gif.reset)
+        $changed(gif.O_length[prt]) |-> (gif.O_req[prt]) or ($past(gif.O_end[prt], 1));
+    endproperty
+        
     property length0_prop(int prt);
         @(negedge gif.clk) disable iff (!gif.reset)
         $fell(gif.O_end[prt]) |=> !gif.O_length[prt] until gif.O_req[prt];
     endproperty
 
     property endDuringTran_prop(int prt);
-        @(negedge gif.clk) disable iff (!gif.reset)
         gif.O_start[prt] |=> ((gif.O_length[prt] == 1) && (gif.O_end[prt])) || ((gif.O_length != 1) && (!gif.O_end[prt]));//##(/*gif.O_length[prt] - 1*/1) gif.O_end[prt]));
     endproperty
+    
+    sequence startOfPacket_seq;
+        (!gif.reset ##1 gif.reset ##[0:$] gif.I_valid ) or (gif.I_end ##[2:$] gif.I_valid);
+    endsequence
+    
+    property noWaitCycleAfterHeader_prop;
+        @(negedge gif.clk) disable iff (!gif.reset)
+        startOfPacket_seq |-> gif.I_valid;
+    endproperty
+
+    property noStartIfNotReady_prop;
+        @(negedge gif.clk) disable iff (!gif.reset)
+        startOfPacket_seq |-> $past(gif.I_ready, 1);
+    endproperty
+
+    property headerPortCheck;
+        @(negedge gif.clk) disable iff (!gif.reset)
+        startOfPacket_seq |-> gif.I_data[1:0] != 2'b11;
+    endproperty
+
+    property headerLengthCheck;
+        @(negedge gif.clk) disable iff (!gif.reset)
+        startOfPacket_seq |-> ((gif.I_data[7:2] >= 6'b1) and (gif.I_data[7:2] <= 6'b1100));
+    endproperty
+    
+    property intraPacketDelay; 
+        @(negedge gif.clk) disable iff (!gif.reset)
+        gif.I_end |=> !gif.I_valid ##1 !gif.I_valid;
+    endproperty
+    
+    property GIP_endOutOfTran_prop;
+        @(negedge gif.clk) disable iff (!gif.reset)
+        gif.I_end |=> !gif.I_end until gif.I_valid;
+    endproperty
+
+    //used to check sequence works
+    //assert property (@(negedge gif.clk) startOfPacket_seq(0) |-> 0) else $info("sending header");
 
     GOP0_start1: assert property (start1_prop(0));
     GOP1_start1: assert property (start1_prop(1));
@@ -76,15 +113,24 @@ program automatic Gullfaxi_tb (GullfaxiInterface gif);
     GOP1_reqFall: assert property (reqFall_prop(1));
     GOP2_reqFall: assert property (reqFall_prop(2));
 
-    //GOP0_lengthToggle : assert property (lengthToggle(0));
-    //GOP1_lengthToggle : assert property (lengthToggle(1));
-    //GOP2_lengthToggle : assert property (lengthToggle(2));
+    GOP0_lengthToggle : assert property (lengthToggle(0));
+    GOP1_lengthToggle : assert property (lengthToggle(1));
+    GOP2_lengthToggle : assert property (lengthToggle(2));
     
     GOP0_length0 : assert property (length0_prop(0));
     GOP1_length0 : assert property (length0_prop(1));
     GOP2_length0 : assert property (length0_prop(2));
     
-    GOP0_endDuringTran : assert property (endDuringTran_prop(0));
+//    GOP0_endDuringTran : assert property (endDuringTran_prop(0));
+//    GOP1_endDuringTran : assert property (endDuringTran_prop(1));
+//    GOP2_endDuringTran : assert property (endDuringTran_prop(2));
+
+    GIP_noWaitCycleAfterHeader : assert property (noWaitCycleAfterHeader_prop);
+    GIP_noStartIfNotReady : assert property (noStartIfNotReady_prop);
+    GIP_headerLengthCheck : assert property (headerLengthCheck);
+    GIP_intraPacketDelay : assert property (intraPacketDelay);
+    GIP_endOutOfTran : assert property (GIP_endOutOfTran_prop);
+
     initial begin
         mailbox #(Packet) generator_checker_mbx;
         mailbox #(Packet) generator_driver_mbx;
